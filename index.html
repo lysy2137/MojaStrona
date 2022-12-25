@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Żaba</title>
+    <link href="https://fonts.cdnfonts.com/css/serious" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/serious');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="form" id="form" style="display: none;">
+        
+        <p id="left"><--</p>
+        <div class="formularz" id="formularz">
+            <img id="bar" src="icon.gif" style="display: none;" alt="lol">
+            <form name="myemailform" id="f" method="post"> 
+                <img id="frogy2" src="frogSleep.gif" alt="lol"/>
+                <label for="email" id="label">Email:</label><br>
+                <input type="text" id="email" style="border: 2px solid black;" name="email" required><br>
+                <label for="topic" id="tyt" >Tytul:</label><br>
+                <input type="text" id="topic" name="topic" autocomplete="off" style="border: 2px solid black;"><br>
+                <label for="message">Wiadomosc:</label><br>
+                <textarea id="mess" name="mess" rows="10" cols="15" autocomplete="off" style="border: 2px solid black;" placeholder="Twoja wiadomość"></textarea><br>
+                <input type="button" id="button" value="Submit" name="submit">
+              </form>
+        </div>
+        
+    </div>
+
+    <div class="swamp" id="swamp" style="display: block;">
+        <canvas id="canvas"></canvas>
+        <p id="right">--></p>
+        <div class="text" id="text">
+            <div id="textA" style="display: block;">
+                <h1>Mieszko Strzelczyk</h1>
+                <p>Witam serdecznie na mojej stronie!</p>
+            </div>
+            <div id="textB" style="display: none;">
+                <h1>O mnie</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non lorem purus. Curabitur a turpis ultricies, varius massa in, pellentesque ipsum. Pellentesque in mollis neque, a volutpat orci. Fusce luctus, odio a ultricies hendrerit, arcu risus tincidunt magna, id mattis nisi augue eu elit. Integer lobortis justo vitae enim condimentum.</p>
+            </div>
+            <div id="textC" style="display: none;">
+                <h1>Lista</h1>
+                <ul id="list">
+                    <li>Herbata</li>
+                    <li id="li1">Yerba</li>
+                    <li id="li2">Woda</li>
+                  </ul>
+            </div>
+            <div id="textD" style="display: none;">
+                <h1>Kontakt</h1>
+                <p>Email: MieszkoStrzelczyk03@gmail.com</p>
+                <p>Telefon: 508528983</p>
+            </div>
+            <img id="click" src="click.gif" alt="lol">
+        </div>
+        <div class="surface"></div>
+        <div class="frog">
+            <img id='frogy' src="FrogIdle.gif" alt="lol">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,519 @@
+@media only screen and (max-width: 600px) {
+
+    body{
+        margin: 0;
+        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+        overflow-y: hidden;
+        font-family: 'serious1', sans-serif;                       
+    }
+    
+    .swamp{
+        height: 110vh;
+        width: 100%;
+        background: url("swamp2.png");
+        margin-bottom: 20rem ;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+    .surface{
+        height: 350px;
+        width: 450vw;
+        background: url("floor1.png");
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        background-repeat: repeat-x;
+    }
+    
+    .frog{
+        position: absolute;
+        bottom: 140px;
+        left: 17%;
+        user-select: none;
+    }
+    
+    #enter{
+        position: absolute;
+        bottom: 120px;
+        right: 8%;
+        user-select: none;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    
+    @keyframes moveRight{
+        100%{transform: translateX(-1080px);}
+    }
+    
+    @keyframes moveRight2{
+        100%{transform: translateX(-1920px);}
+    }
+    
+    .moveRight{
+        animation: moveRight 10s linear infinite forwards;
+    }
+    
+    .moveRight2{
+        animation: moveRight2 2s ease-in forwards;
+    }
+    
+    #right{
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        color: aliceblue;
+        font-size: 30px;
+        user-select: none;
+    }
+    
+    #right:hover{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    #left{
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        color: aliceblue;
+        font-size: 30px;
+        user-select: none;
+    }
+    
+    #left:hover{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    .form{
+        height: 110vh;
+        width: 100vw;
+        margin-bottom: 20rem;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    }
+    
+    .formularz{
+        height: 70vh;
+        width: 60vw;
+        border: 1px solid black;
+        margin: 5rem auto;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        padding-top: 7%;
+        font-size: 20px;
+        box-shadow: 10px 5px 20px rgba(27, 68, 51, 0.473);
+    }
+    
+    .formularz:hover{
+        background:rgb(0,0,0);
+        background: transparent\9;
+        background:rgba(0,0,0,0.3);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+    }
+    
+    #email{
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        font-size: 15px;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    }
+    
+    #topic{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 15px;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        border: 2px solid;
+    }
+    
+    #mess{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 11px;
+        resize: none;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        margin-bottom: 15px;
+    }
+    
+    #label{
+        margin-top: 10px;
+        float: right;
+        margin-right: 25%;
+        position: absolute;
+        right: 8.6%;
+    }
+    
+    #frogy2{
+        float: left;
+        margin-right: -100px;
+        margin-top: -60px;
+    }
+    
+    #button{
+    font-family: 'serious1', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      cursor: pointer;
+      border: 3px solid;
+      padding: 0.25em 0.5em;
+      box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    #button:active {
+      box-shadow: 0px 0px 0px 0px;
+      top: 5px;
+      left: 5px;
+    }
+    
+    @media (min-width: 768px) {
+      #button {
+        padding: 0.25em 0.75em;
+      }
+    }
+    
+    .text{
+        width: 80%;
+        height: 40%;
+        background:rgb(0,0,0);
+        background: transparent\9;
+        background:rgba(0,0,0,0.4);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+        position: absolute;
+        top: 100px;
+        left: 7.5%;
+        padding: 10px;
+    }
+    
+    #textA{
+        color: aliceblue;
+        font-size: 15px;
+        display: block;
+        user-select: none;
+    }
+    
+    #textB{
+        color: aliceblue;
+        font-size: 15px;
+        display: none;
+        user-select: none;
+    }
+    
+    #textC{
+        color: aliceblue;
+        font-size: 15px;
+        display: none;
+        user-select: none;
+    }
+    
+    #textD{
+        color: aliceblue;
+        font-size: 15px;
+        display: none;
+        user-select: none;
+    }
+    
+    .text:hover{
+        cursor: pointer;
+    }
+    
+    #click{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        display: none;
+        user-select: none;
+    }
+    
+    #bar{
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        top: 0%;
+        left: 90%;
+    }
+    
+    #f{
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    body{
+        margin: 0;
+        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+        overflow-y: hidden;
+        font-family: 'serious1', sans-serif;                       
+    }
+    
+    .swamp{
+        height: 110vh;
+        width: 100%;
+        background: url("swamp4.png");
+        margin-bottom: 20rem ;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+    .surface{
+        height: 350px;
+        width: 350vw;
+        background: url("floor1.png");
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        background-repeat: repeat-x;
+    }
+    
+    .frog{
+        position: absolute;
+        bottom: 90px;
+        left: 17%;
+        user-select: none;
+    }
+    
+    #enter{
+        position: absolute;
+        bottom: 120px;
+        right: 8%;
+        user-select: none;
+        font-size: 30px;
+        color: aliceblue;
+    }
+    
+    @keyframes moveRight{
+        100%{transform: translateX(-1080px);}
+    }
+    
+    @keyframes moveRight2{
+        100%{transform: translateX(-1920px);}
+    }
+    
+    .moveRight{
+        animation: moveRight 10s linear infinite forwards;
+    }
+    
+    .moveRight2{
+        animation: moveRight2 2s ease-in forwards;
+    }
+    
+    #right{
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        color: aliceblue;
+        font-size: 30px;
+        user-select: none;
+    }
+    
+    #right:hover{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    #left{
+        position: absolute;
+        top: 5px;
+        left: 50px;
+        color: aliceblue;
+        font-size: 30px;
+        user-select: none;
+    }
+    
+    #left:hover{
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    .form{
+        height: 110vh;
+        width: 100vw;
+        margin-bottom: 20rem;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    }
+    
+    .formularz{
+        height: 60vh;
+        width: 20vw;
+        border: 1px solid black;
+        margin: 5rem auto;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+        padding-top: 7%;
+        font-size: 20px;
+        box-shadow: 10px 5px 20px rgba(27, 68, 51, 0.473);
+    }
+    
+    .formularz:hover{
+        background:rgb(0,0,0);
+        background: transparent\9;
+        background:rgba(0,0,0,0.3);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+    }
+    
+    #email{
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        font-size: 20px;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    }
+    
+    #topic{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 20px;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        border: 2px solid;
+    }
+    
+    #mess{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 15px;
+        resize: none;
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+        margin-bottom: 15px;
+    }
+    
+    #label{
+        margin-top: 10px;
+        float: right;
+        margin-right: 31%;
+        position: absolute;
+        right: 8.6%;
+    }
+    
+    #frogy2{
+        float: left;
+        margin-right: -100px;
+        margin-top: -60px;
+    }
+    
+    #button{
+    font-family: 'serious1', sans-serif;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      cursor: pointer;
+      border: 3px solid;
+      padding: 0.25em 0.5em;
+      box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    #button:active {
+      box-shadow: 0px 0px 0px 0px;
+      top: 5px;
+      left: 5px;
+    }
+    
+    @media (min-width: 768px) {
+      #button {
+        padding: 0.25em 0.75em;
+      }
+    }
+    
+    .text{
+        width: 45%;
+        height: 40%;
+        background:rgb(0,0,0);
+        background: transparent\9;
+        background:rgba(0,0,0,0.4);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        padding: 10px;
+    }
+    
+    #textA{
+        color: aliceblue;
+        font-size: 20px;
+        display: block;
+        user-select: none;
+    }
+    
+    #textB{
+        color: aliceblue;
+        font-size: 20px;
+        display: none;
+        user-select: none;
+    }
+    
+    #textC{
+        color: aliceblue;
+        font-size: 20px;
+        display: none;
+        user-select: none;
+    }
+    
+    #textD{
+        color: aliceblue;
+        font-size: 20px;
+        display: none;
+        user-select: none;
+    }
+    
+    .text:hover{
+        cursor: pointer;
+    }
+    
+    #click{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        display: none;
+        user-select: none;
+    }
+    
+    #bar{
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        top: 0%;
+        left: 90%;
+    }
+    
+    #f{
+        position: relative;
+    }
+    }
